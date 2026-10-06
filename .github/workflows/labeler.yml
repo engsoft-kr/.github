@@ -1,0 +1,15 @@
+name: Labeler
+
+on:
+  issues:
+    types: [opened, edited, milestoned]
+  pull_request_target:
+    types: [opened, edited, synchronize]
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fuxingloh/multi-labeler@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

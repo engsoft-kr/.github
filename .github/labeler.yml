@@ -1,0 +1,86 @@
+version: v1
+
+labels:
+  - label: feat
+    matcher:
+      title: '^(feat(?:\(.+\))?|\[Feature\]):.+'
+      branch: '^feat\/.+'
+      commits: '^feat(?:\(.+\))?:.+'
+
+  - label: bug
+    matcher:
+      title: '^(bug(?:\(.+\))?|\[Bug\]):.+'
+      branch: '^bug\/.+'
+      commits: '^bug(?:\(.+\))?:.+'
+
+  - label: fix
+    matcher:
+      title: '^(fix(?:\(.+\))?|\[Fix\]):.+'
+      branch: '^fix\/.+'
+      commits: '^fix(?:\(.+\))?:.+'
+
+  - label: hotfix
+    matcher:
+      title: '^(hotfix(?:\(.+\))?|\[Hotfix\]):.+'
+      branch: '^hotfix\/.+'
+      commits: '^hotfix(?:\(.+\))?:.+'
+
+  - label: chore
+    matcher:
+      title: '^(chore(?:\(.+\))?|\[Chore\]):.+'
+      branch: '^chore\/.+'
+      commits: '^chore(?:\(.+\))?:.+'
+
+  - label: docs
+    matcher:
+      title: '^(docs(?:\(.+\))?|\[Docs\]):.+'
+      branch: '^docs\/.+'
+      commits: '^docs(?:\(.+\))?:.+'
+
+  - label: test
+    matcher:
+      title: '^(test(?:\(.+\))?|\[Test\]):.+'
+      branch: '^test\/.+'
+      commits: '^test(?:\(.+\))?:.+'
+
+  - label: refactor
+    matcher:
+      title: '^(refactor(?:\(.+\))?|\[Refactor\]):.+'
+      branch: '^refactor\/.+'
+      commits: '^refactor(?:\(.+\))?:.+'
+
+  - label: style
+    matcher:
+      title: '^(style(?:\(.+\))?|\[Style\]):.+'
+      branch: '^style\/.+'
+      commits: '^style(?:\(.+\))?:.+'
+
+  - label: build
+    matcher:
+      title: '^(build(?:\(.+\))?|\[Build\]):.+'
+      branch: '^build\/.+'
+      commits: '^build(?:\(.+\))?:.+'
+
+  - label: release
+    matcher:
+      title: '^(release(?:\(.+\))?|\[Release\]):.+'
+      branch: '^release\/.+'
+      commits: '^release(?:\(.+\))?:.+'
+
+  - label: revert
+    matcher:
+      title: '^(revert(?:\(.+\))?|\[Revert\]):.+'
+      branch: '^revert\/.+'
+      commits: '^revert(?:\(.+\))?:.+'
+
+  - label: perf
+    matcher:
+      title: '^(perf(?:\(.+\))?|\[Perf\]):.+'
+      branch: '^perf\/.+'
+      commits: '^perf(?:\(.+\))?:.+'
+
+  - label: ci
+    matcher:
+      title: '^(ci(?:\(.+\))?|\[Ci\]):.+'
+      branch: '^ci\/.+'
+      commits: '^ci(?:\(.+\))?:.+'
